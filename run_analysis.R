@@ -1,5 +1,3 @@
-setwd("D:/Karen/Data Analytics/Data Science Coursera/Getting and Cleaning Data/Assignment data/UCI HAR Dataset")
-
 #1. Merges the training and the test sets to create one data set
 
 #Read the training data files in
