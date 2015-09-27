@@ -1,6 +1,9 @@
 #Coursera Course Project for Getting and Cleaning Data CodeBook
 
-This codebook describes the variables, data, transformations and work performed to clean up data.
+The original codebook can be found in the extracted data folder
+* features_info.txt
+
+This codebook describes the variables, data, transformations and work performed to clean up data. Refer to features_info.txt if interested in the unmodified data set.
 
 ##About
 Data: Human Activity Recognition Using Smartphones Dataset
