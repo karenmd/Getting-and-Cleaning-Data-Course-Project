@@ -41,7 +41,6 @@ rm(subject_test, subject_train, test, train, x_test,
 
 #Extract only the measurements on the mean and standard deviation for each measurement, 
 #making sure to still include Subject ID and Activity columns (1 and 2)
-#mergeddata <- mergeddata[,c(1,2,grep("-mean()|-std()", names(mergeddata), ignore.case=TRUE))]
 mergeddata <- mergeddata[,c(1,2,grep("mean\\(\\)|std\\(\\)", names(mergeddata), ignore.case=TRUE))]
 
 #3. Uses descriptive activity names to name the activities in the data set
@@ -77,7 +76,7 @@ names(mergeddata) <- gsub('^f', "FrequencyDomain_", names(mergeddata))
 
 #Use aggregate function to create the tidy data as a set of variables for each subject and activity. 
 #10299 instances are split into 180 groups (30 subjects and 6 activites). 
-#The data has 79 mean and standard deviation features averaged. 
+#The data has 66 mean and standard deviation features averaged. 
 tidydata <- aggregate(. ~ SubjectID + Activity, data=mergeddata, mean)
 tidydata <- tidydata[order(tidydata$SubjectID, tidydata$Activity),]
 
