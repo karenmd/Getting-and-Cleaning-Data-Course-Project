@@ -47,7 +47,7 @@ Time domain and frequency domain mean and standard deviation were extracted for 
 * Mean: Mean value
 * Std: Standard deviation
 
-These consist of the following:
+The original labels were modifed to descriptive variable names and include the following:
 
 * TimeDomain_BodyAccelerometerMeanX
 * TimeDomain_BodyAccelerometerMeanY
