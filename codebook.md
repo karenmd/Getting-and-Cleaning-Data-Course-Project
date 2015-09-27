@@ -39,151 +39,104 @@ The following files are available for the train and test data. Their description
     Note: The Intertial Signals datasets were not used in this project.
 
 
-The following variables were extracted:
-
-angletBodyAccelerometerJerkMean.gravityMean
-angletBodyAccelerometerMean.gravity
-angletBodyGyroscopeJerkMean.gravityMean
-angletBodyGyroscopeMean.gravityMean
-angleX.gravityMean
-angleY.gravityMean
-angleZ.gravityMean
-FrequencyBodyAccelerometerJerkMagnitudeMean
-FrequencyBodyAccelerometerJerkMagnitudeMeanFreq
-FrequencyBodyAccelerometerJerkMagnitudeStd
-FrequencyBodyAccelerometerJerkMeanFreqX
-FrequencyBodyAccelerometerJerkMeanFreqY
-FrequencyBodyAccelerometerJerkMeanFreqZ
-FrequencyBodyAccelerometerJerkMeanX
-FrequencyBodyAccelerometerJerkMeanY
-FrequencyBodyAccelerometerJerkMeanZ
-FrequencyBodyAccelerometerJerkStdX
-FrequencyBodyAccelerometerJerkStdY
-FrequencyBodyAccelerometerJerkStdZ
-FrequencyBodyAccelerometerMagnitudeMean
-FrequencyBodyAccelerometerMagnitudeMeanFreq
-FrequencyBodyAccelerometerMagnitudeStd
-FrequencyBodyAccelerometerMeanFreqX
-FrequencyBodyAccelerometerMeanFreqY
-FrequencyBodyAccelerometerMeanFreqZ
-FrequencyBodyAccelerometerMeanX
-FrequencyBodyAccelerometerMeanY
-FrequencyBodyAccelerometerMeanZ
-FrequencyBodyAccelerometerStdX
-FrequencyBodyAccelerometerStdY
-FrequencyBodyAccelerometerStdZ
-FrequencyBodyGyroscopeJerkMagnitudeMean
-FrequencyBodyGyroscopeJerkMagnitudeMeanFreq
-FrequencyBodyGyroscopeJerkMagnitudeStd
-FrequencyBodyGyroscopeMagnitudeMean
-FrequencyBodyGyroscopeMagnitudeMeanFreq
-FrequencyBodyGyroscopeMagnitudeStd
-FrequencyBodyGyroscopeMeanFreqX
-FrequencyBodyGyroscopeMeanFreqY
-FrequencyBodyGyroscopeMeanFreqZ
-FrequencyBodyGyroscopeMeanX
-FrequencyBodyGyroscopeMeanY
-FrequencyBodyGyroscopeMeanZ
-FrequencyBodyGyroscopeStdX
-FrequencyBodyGyroscopeStdY
-FrequencyBodyGyroscopeStdZ
-TimeBodyAccelerometerJerkMagnitudeMean
-TimeBodyAccelerometerJerkMagnitudeStd
-TimeBodyAccelerometerJerkMeanX
-TimeBodyAccelerometerJerkMeanY
-TimeBodyAccelerometerJerkMeanZ
-TimeBodyAccelerometerJerkStdX
-TimeBodyAccelerometerJerkStdY
-TimeBodyAccelerometerJerkStdZ
-TimeBodyAccelerometerMagnitudeMean
-TimeBodyAccelerometerMagnitudeStd
-TimeBodyAccelerometerMeanX
-TimeBodyAccelerometerMeanY
-TimeBodyAccelerometerMeanZ
-TimeBodyAccelerometerStdX
-TimeBodyAccelerometerStdY
-TimeBodyAccelerometerStdZ
-TimeBodyGyroscopeJerkMagnitudeMean
-TimeBodyGyroscopeJerkMagnitudeStd
-TimeBodyGyroscopeJerkMeanX
-TimeBodyGyroscopeJerkMeanY
-TimeBodyGyroscopeJerkMeanZ
-TimeBodyGyroscopeJerkStdX
-TimeBodyGyroscopeJerkStdY
-TimeBodyGyroscopeJerkStdZ
-TimeBodyGyroscopeMagnitudeMean
-TimeBodyGyroscopeMagnitudeStd
-TimeBodyGyroscopeMeanX
-TimeBodyGyroscopeMeanY
-TimeBodyGyroscopeMeanZ
-TimeBodyGyroscopeStdX
-TimeBodyGyroscopeStdY
-TimeBodyGyroscopeStdZ
-TimeGravityAccelerometerMagnitudeMean
-TimeGravityAccelerometerMagnitudeStd
-TimeGravityAccelerometerMeanX
-TimeGravityAccelerometerMeanY
-TimeGravityAccelerometerMeanZ
-TimeGravityAccelerometerStdX
-TimeGravityAccelerometerStdY
-TimeGravityAccelerometerStdZ
-
-
 Feature Selection
+The following 79 variables were extracted:
 
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+Time domain signals:
 
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+TimeDomain_BodyAccelerometerMeanX
+TimeDomain_BodyAccelerometerMeanY
+TimeDomain_BodyAccelerometerMeanZ
+TimeDomain_BodyAccelerometerStdX
+TimeDomain_BodyAccelerometerStdY
+TimeDomain_BodyAccelerometerStdZ
+TimeDomain_GravityAccelerometerMeanX
+TimeDomain_GravityAccelerometerMeanY
+TimeDomain_GravityAccelerometerMeanZ
+TimeDomain_GravityAccelerometerStdX
+TimeDomain_GravityAccelerometerStdY
+TimeDomain_GravityAccelerometerStdZ
+TimeDomain_BodyAccelerometerJerkMeanX
+TimeDomain_BodyAccelerometerJerkMeanY
+TimeDomain_BodyAccelerometerJerkMeanZ
+TimeDomain_BodyAccelerometerJerkStdX
+TimeDomain_BodyAccelerometerJerkStdY
+TimeDomain_BodyAccelerometerJerkStdZ
+TimeDomain_BodyGyroscopeMeanX
+TimeDomain_BodyGyroscopeMeanY
+TimeDomain_BodyGyroscopeMeanZ
+TimeDomain_BodyGyroscopeStdX
+TimeDomain_BodyGyroscopeStdY
+TimeDomain_BodyGyroscopeStdZ
+TimeDomain_BodyGyroscopeJerkMeanX
+TimeDomain_BodyGyroscopeJerkMeanY
+TimeDomain_BodyGyroscopeJerkMeanZ
+TimeDomain_BodyGyroscopeJerkStdX
+TimeDomain_BodyGyroscopeJerkStdY
+TimeDomain_BodyGyroscopeJerkStdZ
+TimeDomain_BodyAccelerometerMagnitudeMean
+TimeDomain_BodyAccelerometerMagnitudeStd
+TimeDomain_GravityAccelerometerMagnitudeMean
+TimeDomain_GravityAccelerometerMagnitudeStd
+TimeDomain_BodyAccelerometerJerkMagnitudeMean
+TimeDomain_BodyAccelerometerJerkMagnitudeStd
+TimeDomain_BodyGyroscopeMagnitudeMean
+TimeDomain_BodyGyroscopeMagnitudeStd
+TimeDomain_BodyGyroscopeJerkMagnitudeMean
+TimeDomain_BodyGyroscopeJerkMagnitudeStd
 
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+Frequency domain signals: 
 
-These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+FrequencyDomain_BodyAccelerometerMeanX
+FrequencyDomain_BodyAccelerometerMeanY
+FrequencyDomain_BodyAccelerometerMeanZ
+FrequencyDomain_BodyAccelerometerStdX
+FrequencyDomain_BodyAccelerometerStdY
+FrequencyDomain_BodyAccelerometerStdZ
+FrequencyDomain_BodyAccelerometerMeanFrequencyX
+FrequencyDomain_BodyAccelerometerMeanFrequencyY
+FrequencyDomain_BodyAccelerometerMeanFrequencyZ
+FrequencyDomain_BodyAccelerometerJerkMeanX
+FrequencyDomain_BodyAccelerometerJerkMeanY
+FrequencyDomain_BodyAccelerometerJerkMeanZ
+FrequencyDomain_BodyAccelerometerJerkStdX
+FrequencyDomain_BodyAccelerometerJerkStdY
+FrequencyDomain_BodyAccelerometerJerkStdZ
+FrequencyDomain_BodyAccelerometerJerkMeanFrequencyX
+FrequencyDomain_BodyAccelerometerJerkMeanFrequencyY
+FrequencyDomain_BodyAccelerometerJerkMeanFrequencyZ
+FrequencyDomain_BodyGyroscopeMeanX
+FrequencyDomain_BodyGyroscopeMeanY
+FrequencyDomain_BodyGyroscopeMeanZ
+FrequencyDomain_BodyGyroscopeStdX
+FrequencyDomain_BodyGyroscopeStdY
+FrequencyDomain_BodyGyroscopeStdZ
+FrequencyDomain_BodyGyroscopeMeanFrequencyX
+FrequencyDomain_BodyGyroscopeMeanFrequencyY
+FrequencyDomain_BodyGyroscopeMeanFrequencyZ
+FrequencyDomain_BodyAccelerometerMagnitudeMean
+FrequencyDomain_BodyAccelerometerMagnitudeStd
+FrequencyDomain_BodyAccelerometerMagnitudeMeanFrequency
+FrequencyDomain_BodyAccelerometerJerkMagnitudeMean
+FrequencyDomain_BodyAccelerometerJerkMagnitudeStd
+FrequencyDomain_BodyAccelerometerJerkMagnitudeMeanFrequency
+FrequencyDomain_BodyGyroscopeMagnitudeMean
+FrequencyDomain_BodyGyroscopeMagnitudeStd
+FrequencyDomain_BodyGyroscopeMagnitudeMeanFrequency
+FrequencyDomain_BodyGyroscopeJerkMagnitudeMean
+FrequencyDomain_BodyGyroscopeJerkMagnitudeStd
+FrequencyDomain_BodyGyroscopeJerkMagnitudeMeanFrequency
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+Mean: Mean value
+Std: Standard deviation
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+Tidydata set
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+The resulting tidydata set contains 81 variables and 180 rows made up of the following:
+A variable for the ID of each of the 30 subjects who participated in the experiment
+A variable for the activity label, one of 6
+79 feature variables with time and frequency domain signal variables
 
-The complete list of variables of each feature vector is available in 'features.txt'
