@@ -50,74 +50,77 @@ Time domain and frequency domain mean and standard deviation were extracted for 
 * Mean: Mean value
 * Std: Standard deviation
 
-The original labels were modifed to descriptive variable names and include the following:
+The original labels were modifed to descriptive variable labels as shown in the table:
 
-* TimeDomain_BodyAccelerometerMeanX
-* TimeDomain_BodyAccelerometerMeanY
-* TimeDomain_BodyAccelerometerMeanZ
-* TimeDomain_BodyAccelerometerStdX
-* TimeDomain_BodyAccelerometerStdY
-* TimeDomain_BodyAccelerometerStdZ
-* TimeDomain_GravityAccelerometerMeanX
-* TimeDomain_GravityAccelerometerMeanY
-* TimeDomain_GravityAccelerometerMeanZ
-* TimeDomain_GravityAccelerometerStdX
-* TimeDomain_GravityAccelerometerStdY
-* TimeDomain_GravityAccelerometerStdZ
-* TimeDomain_BodyAccelerometerJerkMeanX
-* TimeDomain_BodyAccelerometerJerkMeanY
-* TimeDomain_BodyAccelerometerJerkMeanZ
-* TimeDomain_BodyAccelerometerJerkStdX
-* TimeDomain_BodyAccelerometerJerkStdY
-* TimeDomain_BodyAccelerometerJerkStdZ
-* TimeDomain_BodyGyroscopeMeanX
-* TimeDomain_BodyGyroscopeMeanY
-* TimeDomain_BodyGyroscopeMeanZ
-* TimeDomain_BodyGyroscopeStdX
-* TimeDomain_BodyGyroscopeStdY
-* TimeDomain_BodyGyroscopeStdZ
-* TimeDomain_BodyGyroscopeJerkMeanX
-* TimeDomain_BodyGyroscopeJerkMeanY
-* TimeDomain_BodyGyroscopeJerkMeanZ
-* TimeDomain_BodyGyroscopeJerkStdX
-* TimeDomain_BodyGyroscopeJerkStdY
-* TimeDomain_BodyGyroscopeJerkStdZ
-* TimeDomain_BodyAccelerometerMagnitudeMean
-* TimeDomain_BodyAccelerometerMagnitudeStd
-* TimeDomain_GravityAccelerometerMagnitudeMean
-* TimeDomain_GravityAccelerometerMagnitudeStd
-* TimeDomain_BodyAccelerometerJerkMagnitudeMean
-* TimeDomain_BodyAccelerometerJerkMagnitudeStd
-* TimeDomain_BodyGyroscopeMagnitudeMean
-* TimeDomain_BodyGyroscopeMagnitudeStd
-* TimeDomain_BodyGyroscopeJerkMagnitudeMean
-* TimeDomain_BodyGyroscopeJerkMagnitudeStd
-* FrequencyDomain_BodyAccelerometerMeanX
-* FrequencyDomain_BodyAccelerometerMeanY
-* FrequencyDomain_BodyAccelerometerMeanZ
-* FrequencyDomain_BodyAccelerometerStdX
-* FrequencyDomain_BodyAccelerometerStdY
-* FrequencyDomain_BodyAccelerometerStdZ
-* FrequencyDomain_BodyAccelerometerJerkMeanX
-* FrequencyDomain_BodyAccelerometerJerkMeanY
-* FrequencyDomain_BodyAccelerometerJerkMeanZ
-* FrequencyDomain_BodyAccelerometerJerkStdX
-* FrequencyDomain_BodyAccelerometerJerkStdY
-* FrequencyDomain_BodyAccelerometerJerkStdZ
-* FrequencyDomain_BodyGyroscopeMeanX
-* FrequencyDomain_BodyGyroscopeMeanY
-* FrequencyDomain_BodyGyroscopeMeanZ
-* FrequencyDomain_BodyGyroscopeStdX
-* FrequencyDomain_BodyGyroscopeStdY
-* FrequencyDomain_BodyGyroscopeStdZ
-* FrequencyDomain_BodyAccelerometerMagnitudeMean
-* FrequencyDomain_BodyAccelerometerMagnitudeStd
-* FrequencyDomain_BodyAccelerometerJerkMagnitudeMean
-* FrequencyDomain_BodyAccelerometerJerkMagnitudeStd
-* FrequencyDomain_BodyGyroscopeMagnitudeMean
-* FrequencyDomain_BodyGyroscopeMagnitudeStd
-* FrequencyDomain_BodyGyroscopeJerkMagnitudeMean
-* FrequencyDomain_BodyGyroscopeJerkMagnitudeStd
+Original label | Descriptive label
+-------------  | ------------- 
+tBodyAcc.mean...X | TimeDomain_BodyAccelerometerMeanX
+tBodyAcc.mean...Y | TimeDomain_BodyAccelerometerMeanY
+tBodyAcc.mean...Z | TimeDomain_BodyAccelerometerMeanZ
+tBodyAcc.std...X | TimeDomain_BodyAccelerometerStdX
+tBodyAcc.std...Y | TimeDomain_BodyAccelerometerStdY
+tBodyAcc.std...Z | TimeDomain_BodyAccelerometerStdZ
+tGravityAcc.mean...X | TimeDomain_GravityAccelerometerMeanX
+tGravityAcc.mean...Y | TimeDomain_GravityAccelerometerMeanY
+tGravityAcc.mean...Z | TimeDomain_GravityAccelerometerMeanZ
+tGravityAcc.std...X | TimeDomain_GravityAccelerometerStdX
+tGravityAcc.std...Y | TimeDomain_GravityAccelerometerStdY
+tGravityAcc.std...Z | TimeDomain_GravityAccelerometerStdZ
+tBodyAccJerk.mean...X | TimeDomain_BodyAccelerometerJerkMeanX
+tBodyAccJerk.mean...Y | TimeDomain_BodyAccelerometerJerkMeanY
+tBodyAccJerk.mean...Z | TimeDomain_BodyAccelerometerJerkMeanZ
+tBodyAccJerk.std...X | TimeDomain_BodyAccelerometerJerkStdX
+tBodyAccJerk.std...Y | TimeDomain_BodyAccelerometerJerkStdY
+tBodyAccJerk.std...Z | TimeDomain_BodyAccelerometerJerkStdZ
+tBodyGyro.mean...X | TimeDomain_BodyGyroscopeMeanX
+tBodyGyro.mean...Y | TimeDomain_BodyGyroscopeMeanY
+tBodyGyro.mean...Z | TimeDomain_BodyGyroscopeMeanZ
+tBodyGyro.std...X | TimeDomain_BodyGyroscopeStdX
+tBodyGyro.std...Y | TimeDomain_BodyGyroscopeStdY
+tBodyGyro.std...Z | TimeDomain_BodyGyroscopeStdZ
+tBodyGyroJerk.mean...X | TimeDomain_BodyGyroscopeJerkMeanX
+tBodyGyroJerk.mean...Y | TimeDomain_BodyGyroscopeJerkMeanY
+tBodyGyroJerk.mean...Z | TimeDomain_BodyGyroscopeJerkMeanZ
+tBodyGyroJerk.std...X | TimeDomain_BodyGyroscopeJerkStdX
+tBodyGyroJerk.std...Y | TimeDomain_BodyGyroscopeJerkStdY
+tBodyGyroJerk.std...Z | TimeDomain_BodyGyroscopeJerkStdZ
+tBodyAccMag.mean.. | TimeDomain_BodyAccelerometerMagnitudeMean
+tBodyAccMag.std.. | TimeDomain_BodyAccelerometerMagnitudeStd
+tGravityAccMag.mean.. | TimeDomain_GravityAccelerometerMagnitudeMean
+tGravityAccMag.std.. | TimeDomain_GravityAccelerometerMagnitudeStd
+tBodyAccJerkMag.mean.. | TimeDomain_BodyAccelerometerJerkMagnitudeMean
+tBodyAccJerkMag.std.. | TimeDomain_BodyAccelerometerJerkMagnitudeStd
+tBodyGyroMag.mean.. | TimeDomain_BodyGyroscopeMagnitudeMean
+tBodyGyroMag.std.. | TimeDomain_BodyGyroscopeMagnitudeStd
+tBodyGyroJerkMag.mean.. | TimeDomain_BodyGyroscopeJerkMagnitudeMean
+tBodyGyroJerkMag.std.. | TimeDomain_BodyGyroscopeJerkMagnitudeStd
+fBodyAcc.mean...X | FrequencyDomain_BodyAccelerometerMeanX
+fBodyAcc.mean...Y | FrequencyDomain_BodyAccelerometerMeanY
+fBodyAcc.mean...Z | FrequencyDomain_BodyAccelerometerMeanZ
+fBodyAcc.std...X | FrequencyDomain_BodyAccelerometerStdX
+fBodyAcc.std...Y | FrequencyDomain_BodyAccelerometerStdY
+fBodyAcc.std...Z | FrequencyDomain_BodyAccelerometerStdZ
+fBodyAccJerk.mean...X | FrequencyDomain_BodyAccelerometerJerkMeanX
+fBodyAccJerk.mean...Y | FrequencyDomain_BodyAccelerometerJerkMeanY
+fBodyAccJerk.mean...Z | FrequencyDomain_BodyAccelerometerJerkMeanZ
+fBodyAccJerk.std...X | FrequencyDomain_BodyAccelerometerJerkStdX
+fBodyAccJerk.std...Y | FrequencyDomain_BodyAccelerometerJerkStdY
+fBodyAccJerk.std...Z | FrequencyDomain_BodyAccelerometerJerkStdZ
+fBodyGyro.mean...X | FrequencyDomain_BodyGyroscopeMeanX
+fBodyGyro.mean...Y | FrequencyDomain_BodyGyroscopeMeanY
+fBodyGyro.mean...Z | FrequencyDomain_BodyGyroscopeMeanZ
+fBodyGyro.std...X | FrequencyDomain_BodyGyroscopeStdX
+fBodyGyro.std...Y | FrequencyDomain_BodyGyroscopeStdY
+fBodyGyro.std...Z | FrequencyDomain_BodyGyroscopeStdZ
+fBodyAccMag.mean.. | FrequencyDomain_BodyAccelerometerMagnitudeMean
+fBodyAccMag.std.. | FrequencyDomain_BodyAccelerometerMagnitudeStd
+fBodyBodyAccJerkMag.mean.. | FrequencyDomain_BodyAccelerometerJerkMagnitudeMean
+fBodyBodyAccJerkMag.std.. | FrequencyDomain_BodyAccelerometerJerkMagnitudeStd
+fBodyBodyGyroMag.mean.. | FrequencyDomain_BodyGyroscopeMagnitudeMean
+fBodyBodyGyroMag.std.. | FrequencyDomain_BodyGyroscopeMagnitudeStd
+fBodyBodyGyroJerkMag.mean.. | FrequencyDomain_BodyGyroscopeJerkMagnitudeMean
+fBodyBodyGyroJerkMag.std.. | FrequencyDomain_BodyGyroscopeJerkMagnitudeStd
+
 
 Note: the requirement was to extract only the measurements on the mean and standard deviation for each measurement, therefore the MeanFrequency measurements have not been included.
 
