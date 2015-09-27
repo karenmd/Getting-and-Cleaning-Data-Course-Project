@@ -11,19 +11,19 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ###Files included in this repository
 
-* run_Analysis.R - the R script to transform the data to a tidy data set  
+* run_analysis.R - the R script to transform the data to a tidy data set  
 * readme.md - information about the repository and how to run the script  
 * codebook.md - information about the data and transformation to the tidy data set  
 
 ###How to run the script
 
 1. Set the folder "UCI HAR Dataset" to be the working directory.
-2. Place script run_Analysis.R into working directory (UCI HAR Dataset).
-3. Script can be run using the following command
-    ```
+2. Place script run_analysis.R into working directory (UCI HAR Dataset).
+3. Script can be run using the following command  
+    ```{r}
     source("run_analysis.R")
     ```
-4. Once the script is run a file "TidyData.txt" will be generated into the working directory. To read the data into RStudio enter the following command
+4. Once the script is run a file "TidyData.txt" will be generated into the working directory. To read the data into RStudio enter the following command  
     ```{r}
     read.table("TidyData.txt", header = TRUE)
     ```
