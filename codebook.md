@@ -1,9 +1,6 @@
 #Coursera Course Project for Getting and Cleaning Data CodeBook
 
-The original codebook can be found in the extracted data folder
-* features_info.txt
-
-This codebook describes the variables, data, transformations and work performed to clean up data. Refer to features_info.txt if interested in the unmodified data set.
+This codebook is based upon the original codebook "features_info.txt"  and describes the variables, data, transformations and work performed on the data to create the resulting tidy data set.
 
 ##About
 Data: Human Activity Recognition Using Smartphones Dataset
@@ -45,12 +42,16 @@ Note: The Intertial Signals datasets were not used in this project.
 
 ##Feature Selection
 
-Time domain and frequency domain mean and standard deviation were extracted for 79 variables
+Time domain and frequency domain mean and standard deviation were extracted from the original dataset resulting in 66 measurements.
+
+The variables estimaged from the signals are:  
 
 * Mean: Mean value
 * Std: Standard deviation
 
-The original labels were modifed to descriptive variable labels as shown in the table:
+Note: X, Y, and Z denote the 3-axial signals in the X, Y and Z directions.  
+
+The original labels were modifed to descriptive variable labels as shown in the table:  
 
 Original label | Descriptive label
 -------------  | ------------- 
@@ -122,12 +123,11 @@ fBodyBodyGyroJerkMag.mean.. | FrequencyDomain_BodyGyroscopeJerkMagnitudeMean
 fBodyBodyGyroJerkMag.std.. | FrequencyDomain_BodyGyroscopeJerkMagnitudeStd
 
 
-Note: the requirement was to extract only the measurements on the mean and standard deviation for each measurement, therefore the MeanFrequency measurements have not been included.
+As the requirement was to extract only the measurements on the mean and standard deviation for each measurement, the MeanFrequency measurements have not been included.
 
 ##Tidydata set
 
 The resulting tidydata set contains 68 variables and 180 rows made up of the following:  
-* A variable for the ID of each of the 30 subjects who participated in the experiment  
-* A variable for the activity label, one of 6.
-* 66 feature variables with time and frequency domain signal variables  
-
+* SubjectID: A variable for the ID of each of the 30 subjects who participated in the experiment.  
+* Activity: A variable for the activity label, one of 6.  
+* 66 feature variables:  The extracted time and frequency domain signal variables for mean and standard deviation.  
